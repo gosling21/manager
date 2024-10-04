@@ -18,10 +18,8 @@ public class ProductsController {
 
     @RequestMapping(method = RequestMethod.GET)
     public String getProductsList(Model model) {  //обратиться к сервису -> добавить в модель -> вернуть название шаблона
-        // который будет создам ввиде html страницы
+        // который будет создам ввиде html страницы 
         model.addAttribute("products", this.productService.findAllProducts());
         return "catalogue/products/list";
-        vjhkfjkdghvkjhkhv
-        //ДЛЯ ГИТА ТЕСТ
     }
 }
